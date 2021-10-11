@@ -21,7 +21,7 @@ rm -rf /usr/local/go
 tar -C /usr/local -xzf ${WORKDIR}/go${GO_VERSION}.linux-amd64.tar.gz
 
 # Update $PATH
-echo "PATH=$PATH:/usr/local/go/bin" > /etc/profile.d/99-golang-path.sh
+echo "PATH=$PATH:/usr/local/go/bin" >> /opt/stepssharedfolder/sharedEnv 
 
 source /etc/profile
 
