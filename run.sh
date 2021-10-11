@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+set -xe
+
+echo ${INPUT_GO_VERSION}
+
 DEBIAN_FRONTEND=noninteractive
 GO_VERSION="${INPUT_GO_VERSION:-1.17.2}"
 WORKDIR=$(mktemp -d)
