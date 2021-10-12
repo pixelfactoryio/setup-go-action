@@ -15,7 +15,7 @@ curl -sSL -o ${WORKDIR}/go${GO_VERSION}.linux-${ARCH}.tar.gz https://dl.google.c
 rm -rf /usr/local/go 
 tar -C /usr/local -xzf ${WORKDIR}/go${GO_VERSION}.linux-${ARCH}.tar.gz
 
-# Update $PATH
+# Update sharedEnv file with new $PATH
 echo "PATH=$PATH:/usr/local/go/bin" >> /opt/stepssharedfolder/sharedEnv 
 
 source /etc/profile
